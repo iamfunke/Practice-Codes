@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Love Calculator</title>
+    <script type="text/javascript">
+    function calculateLove(){
+        let first_lover = f1.l1.value;
+        let second_lover = f1.l2.value;
+        let temp_value = Math.floor(Math.random()*100)+1;
+        if(temp_value >= 50){
+            f1.result.value = first_lover + ' and ' + second_lover + ' are perfectly matched'
+        }else{
+            f1.result.value = first_lover + ' and ' + second_lover + ' are not perfectly matched'
+        }
+
+    }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <table>
+            <tr>
+                <td>Your name</td>
+                <td><input type="text" placeholder="e.g JBoss" name="l1"></td>
+            </tr>
+            <tr>
+                <td>Lover name</td>
+                <td><input type="text" placeholder="e.g Mofe" name="l2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Calculate" onclick="calculateLove()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea cols="33" rows="3" name="result"></textarea></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
